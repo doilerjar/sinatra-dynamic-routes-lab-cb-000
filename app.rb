@@ -19,7 +19,7 @@ class App < Sinatra::Base
     @number.to_i.times do
       result += @phrase + " "
     end
-    "#{@result}"
+    "#{result}"
 
   end
   
