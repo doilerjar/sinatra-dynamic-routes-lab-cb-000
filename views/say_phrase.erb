@@ -1,9 +1,10 @@
 # say_phrase.erb
 <%# Write your code here! %>
 <h1>Welcome!</h1>
-
+<p>
 <%= @number = params[:number] %>
 <%= @phrase = params[:phrase] %>
 <%= @number.to_i.times do %>
-  <p><%= "#{@phrase}\n" %></p>
+  <%= "#{@phrase}\n" %>
 <%= end %>
+</p>
