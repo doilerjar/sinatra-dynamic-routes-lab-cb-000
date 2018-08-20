@@ -3,7 +3,7 @@
 <h1>Welcome!</h1>
 
 <%= @number = params[:number] %>
-<%= @phrase = parmas[:phrase] %>
+<%= @phrase = params[:phrase] %>
 <%= @number.to_i.times do %>
   <p><%= "#{@phrase}\n" %></p>
 <%= end %>
