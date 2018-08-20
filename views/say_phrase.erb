@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My First View!!</title>
-    </head>
-    <body>
-        <%= require 'date' %>
-        <!--<%= d = DateTime.new(2015, 11, 18) %>-->
-        <%= d = DateTime.now %>
-        <h1>The date is <%= "#{d.strftime("%A, %B %e, %Y")}"%></h1>
-    </body>
+<head>
+    <title>My First View!!</title>
+</head>
+<body>
+  <p>
+    <%= @number = params[:number] %>
+    <%= @phrase = params[:phrase] %>
+    <%= @number.to_i.times do %>
+      <%= "#{@phrase}\n" %>
+    <%= end %>
+  </p>
+</body>
 </html>
-<p>
-<%= @number = params[:number] %>
-<%= @phrase = params[:phrase] %>
-<%= @number.to_i.times do %>
-  <%= "#{@phrase}\n" %>
-<%= end %>
-</p>
