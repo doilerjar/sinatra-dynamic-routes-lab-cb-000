@@ -18,8 +18,8 @@ class App < Sinatra::Base
     # @number.to_i.times do
     #   "#{@phrase}\n"
     # end
-    
-    erb :say_phrase
+    "Hello #{@number.to_i}, #{@phrase}."
+    # erb :say_phrase
     
   end
   
